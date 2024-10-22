@@ -1,0 +1,36 @@
+
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{%static 'style.css'%}">
+        {%block estylos%} {%endblock estylos%}
+
+        <tilte>
+            {%block titulo%} {%endblock titulo%}
+        </title>
+    </head>
+    <body>
+        <!--incluyo el menu-->
+      {% include "layout/partials/menu.html" %}
+<main>
+{% block content %}
+
+{% endblock content %}
+</main>
+
+<footer>
+    <p>todo reservado</p>
+</footer>
+
+{%block script%}
+{%endblock script%}
+
+    </body>
+</html>
